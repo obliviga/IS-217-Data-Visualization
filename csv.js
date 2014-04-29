@@ -10,7 +10,7 @@ var app = express();
 var records = [];
 
 csv(records)
-   .from.stream(fs.createReadStream(__dirname + '/alcohol.csv'), {
+   .from.stream(fs.createReadStream(__dirname + '/income.csv'), {
    columns: true
 })
    .on('record', function (row, index) {
@@ -21,8 +21,8 @@ csv(records)
    .on('end', function (count) {
    var MongoClient = require('mongodb').MongoClient;
    // Connect to the db
-   MongoClient.connect("mongodb://localhost:27017/alcoholDb", function (err, db) {
-      var collection = db.collection('alcohols')
+   MongoClient.connect("mongodb://localhost:27017/incomeDb", function (err, db) {
+      var collection = db.collection('incomes')
       collection.insert(records, function (err, doc) {
          // console.log(doc);
       });
