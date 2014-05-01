@@ -1,5 +1,14 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='jquery.js') 
+    script(src='D3/d3.js')
+    script(src='topojson/topojson.js')
+    script(src='datamap.js')
+    script(src='code.js')
+  body
+    h1 United State Income 
+    #container
+    
