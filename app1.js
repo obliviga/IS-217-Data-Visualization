@@ -40,11 +40,11 @@ app.get('/setupDB', function(req,res){
 	.on('record', function (row, index) {
 	   //console.log(row.Country);
 		var color = {};
-		if(row.Income <= 52355)
+		if(row.Income >= 0)
 			color = 'low';
-		if(row.Income <= 49876)
+		if(row.Income >= 47679)
 			color = 'medium';
-		if(row.Income > 49876)
+		if(row.Income >= 53112 )
 			color = 'high';
 	   	insert[row.State] = {
 			Income : row.Income,
