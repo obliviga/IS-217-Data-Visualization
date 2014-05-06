@@ -40,9 +40,9 @@ app.get('/setupDB', function(req,res){
 	.on('record', function (row, index) {
 	   //console.log(row.Country);
 		var color = {};
-		if(row.Income >= 0)
+		if(row.Income  >= 0 &&  row.Income < 47679)
 			color = 'low';
-		if(row.Income >= 47679)
+		if(row.Income >= 47679 && row.Income < 53112)
 			color = 'medium';
 		if(row.Income >= 53112 )
 			color = 'high';
