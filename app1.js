@@ -51,7 +51,7 @@ app.get('/setupDB', function (req, res) {
                 fillKey: color
             }
 
-            console.log(insert[row.State]);
+            // console.log(insert[row.State]);
 
             //console.log(row);
         })
@@ -64,14 +64,14 @@ app.get('/setupDB', function (req, res) {
             records.push(insert);
 
             collection.insert(records, function (err, doc) {
-                console.log(doc);
+                // console.log(doc);
             });
 
         });
-        //console.log('Number of lines: ' + count);
+        console.log(count);
         res.send('Number of states populated: ' + count + 
         '<br><a href="/">Back</a>');
-
+				
     });
 });
 
