@@ -19,9 +19,9 @@ $(document).ready(function(){
 
 			fills: {
 				defaultFill: 'rgb(240,240,240)',
-				'low': 'rgb(199,233,255)',
-				'medium': 'rgb(159,217,255)',
-				'high': 'rgb(2,155,255)'
+				'low': 'rgb(153,255,153)',
+				'medium': 'rgb(0,255,0)',
+				'high': 'rgb(0,102,0)'
 			},
 
 			data: Mdata[0],
