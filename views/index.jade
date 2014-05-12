@@ -1,22 +1,17 @@
-doctype 5
-html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    script(src='jquery.js') 
-    script(src='D3/d3.js')
-    script(src='topojson/topojson.js')
-    script(src='datamap.js')
-    script(src='code.js')
-  body
-
-    h1 United State's Average Income 
-    p
-    | If the map is not green, then click 
+extends layout
+block content
+  h1 United State's Average Income 
+  h2
+    | If the map is not green, then click&nbsp;
     a(href='setupDB') here
     |&nbsp;to populate it!
-
-    p Light green: Income < $47k
-    p Regular green: Income $47-53k
-    p Dark green: Income > $53k
-    #container
+  #container
+  .well
+   p Light green: Income < $47k
+   p Regular green: Income $47-53k
+   p Dark green: Income > $53k
+   
+    h2
+  | If the map is not green, then click 
+  a(href='setupDB') here
+  |&nbsp;to populate it!

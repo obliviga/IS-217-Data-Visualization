@@ -1,7 +1,6 @@
 var express = require('express'),
     fs = require('fs'),
     routes = require('./routes'),
-    user = require('./routes/user'),
     http = require('http'),
     csv = require('csv'),
     path = require('path');
@@ -28,7 +27,6 @@ app.configure('development', function () {
 
 app.get('/', routes.index);
 app.get('/mongo', routes.mongo);
-app.get('/users', user.list);
 
 app.get('/setupDB', function (req, res) {
     var insert = {};

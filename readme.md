@@ -20,6 +20,8 @@ This project is created with [Node.js][1] and [MongoDB][2].
 ```
 // In the project directory, run:
 node app.js
+
+//Then go to http://localhost:3000/ and POPULATE!
 ```
 
 
@@ -31,3 +33,5 @@ node app.js
   [6]: http://www.adaltas.com/projects/node-csv/
   [7]: http://d3js.org/
   [8]: http://datamaps.github.io/
+  
+Created by Lynn Wall and Anish Kshatriya
